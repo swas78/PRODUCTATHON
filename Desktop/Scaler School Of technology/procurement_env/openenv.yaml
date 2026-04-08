@@ -1,0 +1,113 @@
+name: procurement-negotiation-env
+version: "1.0.0"
+description: >
+  A real-world procurement and contract negotiation environment where an AI agent
+  reads multi-clause vendor contracts, infers hidden risks, negotiates prices,
+  adapts to dynamic events, and selects the optimal vendor under uncertainty.
+
+author: "Hackathon Submission"
+tags:
+  - procurement
+  - negotiation
+  - contract-understanding
+  - multi-step-reasoning
+  - dynamic-environment
+
+task_levels:
+  - easy
+  - medium
+  - hard
+
+tasks:
+  - id: task1_easy
+    description: "2 vendors, clear winner, no traps. Agent must identify and accept optimal deal."
+    min_score: 0.67
+  - id: task2_medium
+    description: "3 vendors, price vs reliability trade-off, hidden risk in cheapest contract."
+    min_score: 0.75
+  - id: task3_hard
+    description: "5 vendors, hidden clause traps, dynamic events (budget cuts, deadline changes)."
+    min_score: 0.60
+
+observation_space:
+  type: dict
+  fields:
+    budget:
+      type: integer
+      description: Remaining procurement budget in USD
+    deadline_days:
+      type: integer
+      description: Days until delivery deadline
+    requirements:
+      type: dict
+      description: Item, quantity, min warranty months
+    vendors:
+      type: list
+      description: Public vendor info including contract text
+    selected_vendor:
+      type: string
+      description: Currently selected vendor ID (nullable)
+    current_round:
+      type: integer
+      description: Current negotiation round (1-indexed)
+    max_rounds:
+      type: integer
+      description: Maximum negotiation rounds allowed
+    history:
+      type: list
+      description: All past actions and their results
+    events_triggered:
+      type: list
+      description: Dynamic events fired this episode
+    done:
+      type: boolean
+      description: Whether the episode is complete
+
+action_space:
+  type: dict
+  actions:
+    SELECT_VENDOR:
+      fields: [vendor_id]
+      description: "Select a vendor to begin evaluation"
+    COUNTER_OFFER:
+      fields: [vendor_id, new_price]
+      description: "Submit a counter price offer to a vendor"
+    ACCEPT_DEAL:
+      fields: [vendor_id, explanation]
+      description: "Accept final deal with chosen vendor"
+    REJECT_VENDOR:
+      fields: [vendor_id]
+      description: "Remove a vendor from consideration"
+
+reward:
+  range: [0.0, 1.0]
+  formula: >
+    0.35 * cost_score +
+    0.30 * reliability_score +
+    0.15 * time_efficiency +
+    0.10 * warranty_score +
+    0.10 * negotiation_efficiency
+
+grader:
+  type: deterministic
+  checks:
+    - accepted_a_deal
+    - avoided_risky_vendor
+    - within_budget
+    - meets_deadline
+    - used_negotiation
+
+infra:
+  max_runtime_minutes: 20
+  min_vcpu: 2
+  min_memory_gb: 8
+  requires_gpu: false
+  docker: true
+
+inference:
+  script: inference.py
+  log_format: "[START] / [STEP] / [END] structured JSON to stdout"
+  env_vars:
+    - API_BASE_URL
+    - MODEL_NAME
+    - HF_TOKEN
