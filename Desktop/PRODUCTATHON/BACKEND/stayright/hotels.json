@@ -1,0 +1,538 @@
+[
+  {
+    "id": 1,
+    "name": "Connaught Grand",
+    "city": "Delhi",
+    "area": "Connaught Place",
+    "stars": 5,
+    "price_per_night": 18500,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "spa",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "quiet_rooms",
+      "parking",
+      "airport_shuttle",
+      "rooftop"
+    ],
+    "purpose_fit": ["work", "event", "leisure"],
+    "review_tags": [
+      "great wifi",
+      "central location",
+      "quiet rooms",
+      "excellent breakfast",
+      "smooth check-in"
+    ],
+    "review_count": 2143,
+    "distance_center_km": 0.4,
+    "child_friendly": true,
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "name": "Aerocity Express Suites",
+    "city": "Delhi",
+    "area": "Aerocity",
+    "stars": 3,
+    "price_per_night": 4200,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "parking",
+      "airport_shuttle"
+    ],
+    "purpose_fit": ["transit", "work", "budget"],
+    "review_tags": [
+      "near airport",
+      "early flights easy",
+      "basic but clean",
+      "helpful staff",
+      "value for money"
+    ],
+    "review_count": 3891,
+    "distance_center_km": 18.2,
+    "child_friendly": true,
+    "rating": 4.1
+  },
+  {
+    "id": 3,
+    "name": "Karol Bagh Residency",
+    "city": "Delhi",
+    "area": "Karol Bagh",
+    "stars": 2,
+    "price_per_night": 1800,
+    "amenities": ["wifi", "restaurant", "parking"],
+    "purpose_fit": ["budget", "family", "transit"],
+    "review_tags": [
+      "affordable stay",
+      "busy neighbourhood",
+      "simple rooms",
+      "good street food nearby",
+      "no frills"
+    ],
+    "review_count": 756,
+    "distance_center_km": 5.1,
+    "child_friendly": true,
+    "rating": 3.6
+  },
+  {
+    "id": 4,
+    "name": "Hauz Khas House",
+    "city": "Delhi",
+    "area": "Hauz Khas Village",
+    "stars": 4,
+    "price_per_night": 9200,
+    "amenities": [
+      "fast_wifi",
+      "restaurant",
+      "room_service",
+      "rooftop",
+      "parking",
+      "heritage_experience"
+    ],
+    "purpose_fit": ["leisure", "event", "work"],
+    "review_tags": [
+      "vibrant nightlife",
+      "stylish decor",
+      "great wifi",
+      "lively area",
+      "instagram-worthy"
+    ],
+    "review_count": 1204,
+    "distance_center_km": 8.7,
+    "child_friendly": false,
+    "rating": 4.4
+  },
+  {
+    "id": 5,
+    "name": "Dwarka Corporate Inn",
+    "city": "Delhi",
+    "area": "Dwarka Sector 21",
+    "stars": 3,
+    "price_per_night": 5100,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "restaurant",
+      "business_center",
+      "quiet_rooms",
+      "parking",
+      "airport_shuttle"
+    ],
+    "purpose_fit": ["work", "transit", "budget"],
+    "review_tags": [
+      "metro at doorstep",
+      "quiet rooms",
+      "solid for business",
+      "metro link handy",
+      "predictable quality"
+    ],
+    "review_count": 1642,
+    "distance_center_km": 22.5,
+    "child_friendly": true,
+    "rating": 4.0
+  },
+  {
+    "id": 6,
+    "name": "Nehru Place Tech Hotel",
+    "city": "Delhi",
+    "area": "Nehru Place",
+    "stars": 4,
+    "price_per_night": 6800,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "parking"
+    ],
+    "purpose_fit": ["work", "event", "budget"],
+    "review_tags": [
+      "great wifi",
+      "IT hub access",
+      "meeting rooms good",
+      "busy commercial belt",
+      "efficient service"
+    ],
+    "review_count": 988,
+    "distance_center_km": 9.3,
+    "child_friendly": true,
+    "rating": 4.2
+  },
+  {
+    "id": 7,
+    "name": "The Lodhi Collection",
+    "city": "Delhi",
+    "area": "Lodhi Road",
+    "stars": 5,
+    "price_per_night": 32000,
+    "amenities": [
+      "fast_wifi",
+      "pool",
+      "gym",
+      "spa",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "quiet_rooms",
+      "parking",
+      "kids_club",
+      "rooftop"
+    ],
+    "purpose_fit": ["leisure", "family", "event", "work"],
+    "review_tags": [
+      "spa standout",
+      "quiet rooms",
+      "impeccable service",
+      "lush grounds",
+      "worth the splurge"
+    ],
+    "review_count": 892,
+    "distance_center_km": 4.2,
+    "child_friendly": true,
+    "rating": 4.9
+  },
+  {
+    "id": 8,
+    "name": "Rambagh Palace Experience",
+    "city": "Jaipur",
+    "area": "Rambagh",
+    "stars": 5,
+    "price_per_night": 45000,
+    "amenities": [
+      "fast_wifi",
+      "pool",
+      "gym",
+      "spa",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "parking",
+      "kids_club",
+      "heritage_experience",
+      "rooftop"
+    ],
+    "purpose_fit": ["leisure", "event", "family"],
+    "review_tags": [
+      "heritage luxury",
+      "royal treatment",
+      "stunning property",
+      "fine dining",
+      "memorable stay"
+    ],
+    "review_count": 1567,
+    "distance_center_km": 3.8,
+    "child_friendly": true,
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "name": "MI Road Midtown",
+    "city": "Jaipur",
+    "area": "Mirza Ismail Road",
+    "stars": 3,
+    "price_per_night": 3500,
+    "amenities": ["wifi", "restaurant", "parking", "room_service"],
+    "purpose_fit": ["budget", "leisure", "family"],
+    "review_tags": [
+      "walk to shops",
+      "decent rooms",
+      "heritage city base",
+      "friendly front desk",
+      "street noise sometimes"
+    ],
+    "review_count": 2234,
+    "distance_center_km": 1.2,
+    "child_friendly": true,
+    "rating": 3.9
+  },
+  {
+    "id": 10,
+    "name": "Amer Valley Lodge",
+    "city": "Jaipur",
+    "area": "Amer",
+    "stars": 3,
+    "price_per_night": 2900,
+    "amenities": ["wifi", "restaurant", "parking", "heritage_experience"],
+    "purpose_fit": ["leisure", "budget", "family"],
+    "review_tags": [
+      "fort views",
+      "heritage charm",
+      "simple comfort",
+      "great for sightseeing",
+      "steep lanes nearby"
+    ],
+    "review_count": 612,
+    "distance_center_km": 11.4,
+    "child_friendly": true,
+    "rating": 4.0
+  },
+  {
+    "id": 11,
+    "name": "C-Scheme Business Hotel",
+    "city": "Jaipur",
+    "area": "C-Scheme",
+    "stars": 4,
+    "price_per_night": 7200,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "quiet_rooms",
+      "parking"
+    ],
+    "purpose_fit": ["work", "event", "leisure"],
+    "review_tags": [
+      "great wifi",
+      "quiet rooms",
+      "central for meetings",
+      "reliable AC",
+      "good coffee"
+    ],
+    "review_count": 1405,
+    "distance_center_km": 0.9,
+    "child_friendly": true,
+    "rating": 4.3
+  },
+  {
+    "id": 12,
+    "name": "Bani Park Family Suites",
+    "city": "Jaipur",
+    "area": "Bani Park",
+    "stars": 4,
+    "price_per_night": 5500,
+    "amenities": [
+      "wifi",
+      "pool",
+      "restaurant",
+      "room_service",
+      "parking",
+      "kids_club",
+      "airport_shuttle"
+    ],
+    "purpose_fit": ["family", "leisure", "budget"],
+    "review_tags": [
+      "kids loved pool",
+      "spacious rooms",
+      "helpful with cribs",
+      "pleasant gardens",
+      "easy airport run"
+    ],
+    "review_count": 1788,
+    "distance_center_km": 2.6,
+    "child_friendly": true,
+    "rating": 4.2
+  },
+  {
+    "id": 13,
+    "name": "Pink City Backpackers Hub",
+    "city": "Jaipur",
+    "area": "Chandpole Bazar",
+    "stars": 1,
+    "price_per_night": 850,
+    "amenities": ["wifi", "restaurant"],
+    "purpose_fit": ["budget", "transit", "leisure"],
+    "review_tags": [
+      "cheapest option",
+      "dorm clean enough",
+      "social vibe",
+      "thin walls",
+      "great for solo travellers"
+    ],
+    "review_count": 942,
+    "distance_center_km": 1.8,
+    "child_friendly": false,
+    "rating": 3.5
+  },
+  {
+    "id": 14,
+    "name": "Tonk Road Convention Hotel",
+    "city": "Jaipur",
+    "area": "Tonk Road",
+    "stars": 4,
+    "price_per_night": 8900,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "spa",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "parking",
+      "airport_shuttle"
+    ],
+    "purpose_fit": ["event", "work", "family"],
+    "review_tags": [
+      "big banquet halls",
+      "smooth events",
+      "ample parking",
+      "staff on the ball",
+      "slightly dated rooms"
+    ],
+    "review_count": 1103,
+    "distance_center_km": 6.5,
+    "child_friendly": true,
+    "rating": 4.1
+  },
+  {
+    "id": 15,
+    "name": "Vaishali Nagar Comfort Inn",
+    "city": "Jaipur",
+    "area": "Vaishali Nagar",
+    "stars": 3,
+    "price_per_night": 3800,
+    "amenities": ["wifi", "gym", "restaurant", "parking", "room_service"],
+    "purpose_fit": ["budget", "work", "family"],
+    "review_tags": [
+      "residential calm",
+      "good value",
+      "small gym",
+      "decent food",
+      "far from old city"
+    ],
+    "review_count": 667,
+    "distance_center_km": 7.1,
+    "child_friendly": true,
+    "rating": 3.8
+  },
+  {
+    "id": 16,
+    "name": "UB City Skyline",
+    "city": "Bangalore",
+    "area": "Vittal Mallya Road",
+    "stars": 5,
+    "price_per_night": 21000,
+    "amenities": [
+      "fast_wifi",
+      "pool",
+      "gym",
+      "spa",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "quiet_rooms",
+      "parking",
+      "rooftop"
+    ],
+    "purpose_fit": ["work", "leisure", "event"],
+    "review_tags": [
+      "great wifi",
+      "CBD convenience",
+      "rooftop pool",
+      "quiet rooms",
+      "premium feel"
+    ],
+    "review_count": 1987,
+    "distance_center_km": 1.1,
+    "child_friendly": true,
+    "rating": 4.6
+  },
+  {
+    "id": 17,
+    "name": "Koramangala 5th Block Stays",
+    "city": "Bangalore",
+    "area": "Koramangala",
+    "stars": 3,
+    "price_per_night": 4500,
+    "amenities": ["fast_wifi", "restaurant", "parking", "room_service"],
+    "purpose_fit": ["work", "leisure", "budget"],
+    "review_tags": [
+      "startup crowd",
+      "cafes everywhere",
+      "great wifi",
+      "compact rooms",
+      "lively evenings"
+    ],
+    "review_count": 2544,
+    "distance_center_km": 6.8,
+    "child_friendly": false,
+    "rating": 4.0
+  },
+  {
+    "id": 18,
+    "name": "Whitefield Tech Park Hotel",
+    "city": "Bangalore",
+    "area": "Whitefield",
+    "stars": 4,
+    "price_per_night": 7500,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "restaurant",
+      "room_service",
+      "business_center",
+      "quiet_rooms",
+      "parking",
+      "airport_shuttle"
+    ],
+    "purpose_fit": ["work", "transit", "event"],
+    "review_tags": [
+      "IT corridor handy",
+      "quiet rooms",
+      "traffic pain outside",
+      "breakfast spread solid",
+      "corporate regulars"
+    ],
+    "review_count": 3210,
+    "distance_center_km": 18.9,
+    "child_friendly": true,
+    "rating": 4.2
+  },
+  {
+    "id": 19,
+    "name": "Indiranagar 12th Main Hotel",
+    "city": "Bangalore",
+    "area": "Indiranagar",
+    "stars": 4,
+    "price_per_night": 8200,
+    "amenities": [
+      "fast_wifi",
+      "gym",
+      "restaurant",
+      "room_service",
+      "rooftop",
+      "parking"
+    ],
+    "purpose_fit": ["leisure", "work", "family"],
+    "review_tags": [
+      "pub street nearby",
+      "great wifi",
+      "rooftop bar",
+      "young crowd",
+      "weekend noise"
+    ],
+    "review_count": 1876,
+    "distance_center_km": 7.4,
+    "child_friendly": true,
+    "rating": 4.3
+  },
+  {
+    "id": 20,
+    "name": "Electronic City Express",
+    "city": "Bangalore",
+    "area": "Electronic City Phase 1",
+    "stars": 2,
+    "price_per_night": 2200,
+    "amenities": ["wifi", "restaurant", "parking", "business_center"],
+    "purpose_fit": ["budget", "work", "transit"],
+    "review_tags": [
+      "near offices",
+      "basic stay",
+      "long commutes",
+      "cheap and cheerful",
+      "functional only"
+    ],
+    "review_count": 1455,
+    "distance_center_km": 24.3,
+    "child_friendly": true,
+    "rating": 3.7
+  }
+]

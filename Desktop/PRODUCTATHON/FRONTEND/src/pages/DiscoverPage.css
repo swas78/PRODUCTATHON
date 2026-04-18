@@ -1,0 +1,293 @@
+/* ===================================================
+   Discover Page Styles — Clean & Trustworthy
+   =================================================== */
+.discover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #F0F4F8 0%, var(--color-bg) 100%);
+}
+
+/* --- Background --- */
+.discover__bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.discover__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+}
+
+.discover__blob--1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 53, 128, 0.12), transparent 70%);
+  top: -20%;
+  right: -10%;
+}
+
+.discover__blob--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 218, 49, 0.06), transparent 70%);
+  bottom: -10%;
+  left: -5%;
+}
+
+/* --- Back Button --- */
+.discover__back {
+  position: absolute;
+  top: var(--space-6);
+  left: var(--space-6);
+  z-index: var(--z-sticky);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: all var(--transition-base);
+}
+
+.discover__back:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* --- Main Card --- */
+.discover__card {
+  position: relative;
+  z-index: var(--z-base);
+  width: 100%;
+  max-width: 580px;
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--color-border);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s var(--ease-out-expo), transform 0.5s var(--ease-out-expo);
+}
+
+.discover__card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.discover__card::before {
+  display: none;
+}
+
+.discover__card-inner {
+  padding: var(--space-10) var(--space-8);
+}
+
+/* --- Header --- */
+.discover__header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.discover__icon-wrapper {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 53, 128, 0.06);
+  border-radius: var(--radius-lg);
+  color: var(--color-primary);
+  margin: 0 auto var(--space-4);
+}
+
+.discover__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.discover__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* --- Input --- */
+.discover__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-5);
+  transition: all var(--transition-base);
+}
+
+.discover__input-wrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow-primary);
+  background: var(--color-surface);
+}
+
+.discover__input-wrapper--active {
+  border-color: var(--color-primary);
+}
+
+.discover__input-icon {
+  color: var(--color-text-tertiary);
+  flex-shrink: 0;
+  transition: color var(--transition-base);
+}
+
+.discover__input-wrapper:focus-within .discover__input-icon {
+  color: var(--color-primary);
+}
+
+.discover__input {
+  flex: 1;
+  background: transparent;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  padding: var(--space-1) 0;
+}
+
+.discover__input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.discover__clear-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  border-radius: 50%;
+  color: var(--color-text-tertiary);
+  transition: all var(--transition-fast);
+}
+
+.discover__clear-btn:hover {
+  background: var(--color-error);
+  color: #fff;
+}
+
+/* --- Prompts --- */
+.discover__prompts {
+  margin-bottom: var(--space-6);
+}
+
+.discover__prompts-label {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-3);
+}
+
+.discover__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* --- Search Button --- */
+.discover__search-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+}
+
+.discover__search-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  animation: none;
+  box-shadow: none;
+}
+
+.discover__search-btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.discover__search-btn--loading {
+  pointer-events: none;
+}
+
+/* Spinner */
+.discover__spinner {
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* --- Footer --- */
+.discover__footer {
+  position: absolute;
+  bottom: var(--space-8);
+  z-index: var(--z-base);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.5s var(--ease-out-expo) 0.6s, transform 0.5s var(--ease-out-expo) 0.6s;
+}
+
+.discover__footer--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.discover__footer p {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .discover__card-inner {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .discover__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .discover__back {
+    top: var(--space-4);
+    left: var(--space-4);
+  }
+}

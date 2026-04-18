@@ -1,0 +1,19 @@
+/* App-level styles */
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-transition-wrapper {
+  transition: opacity 400ms var(--ease-out-expo), transform 400ms var(--ease-out-expo);
+}
+
+.page-transition-wrapper.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-wrapper.page-exit-active {
+  opacity: 0;
+  transform: translateY(-12px);
+}
